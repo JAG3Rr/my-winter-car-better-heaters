@@ -1,6 +1,6 @@
 # Better Heaters Mod for My Winter Car
 
-Control the heating systems in My Winter Car to survive extreme cold weather.
+Improve the heating systems in My Winter Car to survive extreme cold weather.
 
 ## What This Mod Does
 This mod modifies the `HeatingPower` variable in the game's heating systems to allow you to:
