@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net48</TargetFramework>
+		<OutputType>Library</OutputType>
+		<RootNamespace>GarageRadiatorMod</RootNamespace>
+		<LangVersion>latest</LangVersion>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<!-- BepInEx Core DLL -->
+		<Reference Include="Assembly-CSharp">
+		  <HintPath>B:\SteamLibrary\steamapps\common\My Winter Car\mywintercar_Data\Managed\Assembly-CSharp.dll</HintPath>
+		</Reference>
+		<Reference Include="BepInEx">
+			<HintPath>B:\SteamLibrary\steamapps\common\My Winter Car\BepInEx\core\BepInEx.dll</HintPath>
+		</Reference>
+		<Reference Include="PlayMaker">
+		  <HintPath>B:\SteamLibrary\steamapps\common\My Winter Car\mywintercar_Data\Managed\PlayMaker.dll</HintPath>
+		</Reference>
+
+		<!-- UnityEngine DLL from the game -->
+		<Reference Include="UnityEngine">
+			<HintPath>B:\SteamLibrary\steamapps\common\My Winter Car\mywintercar_Data\Managed\UnityEngine.dll</HintPath>
+		</Reference>
+	</ItemGroup>
+
+</Project>
