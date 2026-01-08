@@ -4,7 +4,7 @@ using UnityEngine;
 using HutongGames.PlayMaker;
 using System.Collections;
 
-[BepInPlugin("com.jager.betterheaters", "Better Heaters", "1.0.0")]
+[BepInPlugin("com.jager.betterheaters", "Better Heaters", "1.0.1")]
 public class BetterHeaters : BaseUnityPlugin
 {
     // Garage heater variables
@@ -287,11 +287,11 @@ public class BetterHeaters : BaseUnityPlugin
     {
         switch (level)
         {
-            case HeatLevel.Low: return 0.25f;
-            case HeatLevel.Warm: return 1f;
-            case HeatLevel.Hot: return 2f;
-            case HeatLevel.Scorching: return 3f;
-            default: return 2f;
+            case HeatLevel.Low: return 0.00725f;
+            case HeatLevel.Warm: return 0.0125f;
+            case HeatLevel.Hot: return 0.05f;
+            case HeatLevel.Scorching: return 0.25f;
+            default: return 0.00725f;
         }
     }
 
@@ -332,4 +332,5 @@ public class BetterHeaters : BaseUnityPlugin
         style.normal.textColor = new Color(0.8f, 0.8f, 0.8f);
         return style;
     }
+
 }
